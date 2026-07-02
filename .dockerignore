@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+.env.*
+data
+strm
+logs
+__pycache__
+*.pyc
+*.pyo
+*.tar
+*.tar.gz
+*.zip
+README.md
+LICENSE

@@ -1,0 +1,14 @@
+services:
+  anistrm:
+    build: .
+    container_name: anistrm
+    restart: unless-stopped
+    environment:
+      TZ: ${TZ:-Asia/Shanghai}
+      ANISTRM_CONFIG_PATH: /data/config.json
+      ANISTRM_OUTPUT_DIR: /strm
+    volumes:
+      - ./data:/data
+      - ./strm:/strm
+    ports:
+      - "${ANISTRM_PORT:-8080}:8080"
