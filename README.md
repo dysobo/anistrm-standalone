@@ -62,7 +62,6 @@ services:
 - `enabled`：是否启用定时任务。
 - `full_sync_once`：下次运行时执行一次全量生成，运行后自动关闭。
 - `use_proxy` / `http_proxy`：是否通过 HTTP/SOCKS 代理访问 Open ANi。
-- `proxy_base`：Open ANi 入口，默认 `https://openani.an-i.workers.dev`。
 - `selected_seasons`：要生成的季度，可包含 `latest` 或 `ANi`。
 - `cron`：定时任务表达式，使用 5 段 crontab 格式。
 - `output_dir`：容器内固定为 `/strm`。
